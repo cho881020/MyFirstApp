@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FDB734"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <ImageView
@@ -14,36 +15,58 @@
         android:src="@drawable/tje_it_logo"/>
     
     <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:orientation="vertical">
 
         <EditText
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="User ID"/>
 
         <EditText
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="로그인"/>
+        <!-- Ctrl + Alt + L -->
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="회원가입"/>
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="로그인"/>
+
+            <Button
+                android:enabled="false"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="회원가입"/>
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
 
     <TextView
+        android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:text="WASAVI LOGISTICS"
         android:textColor="#FFFFFF"/>
 
